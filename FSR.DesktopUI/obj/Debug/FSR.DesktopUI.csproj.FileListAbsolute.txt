@@ -1,0 +1,22 @@
+c:\users\петро\documents\visual studio 2015\Projects\FSR\FSR.DesktopUI\bin\Debug\FSR.DesktopUI.exe.config
+c:\users\петро\documents\visual studio 2015\Projects\FSR\FSR.DesktopUI\bin\Debug\FSR.DesktopUI.exe
+c:\users\петро\documents\visual studio 2015\Projects\FSR\FSR.DesktopUI\bin\Debug\FSR.DesktopUI.pdb
+c:\users\петро\documents\visual studio 2015\Projects\FSR\FSR.DesktopUI\obj\Debug\FSR.DesktopUI.csprojResolveAssemblyReference.cache
+c:\users\петро\documents\visual studio 2015\Projects\FSR\FSR.DesktopUI\obj\Debug\FSR.DesktopUI.Properties.Resources.resources
+c:\users\петро\documents\visual studio 2015\Projects\FSR\FSR.DesktopUI\obj\Debug\FSR.DesktopUI.csproj.GenerateResource.Cache
+c:\users\петро\documents\visual studio 2015\Projects\FSR\FSR.DesktopUI\obj\Debug\FSR.DesktopUI.exe
+c:\users\петро\documents\visual studio 2015\Projects\FSR\FSR.DesktopUI\obj\Debug\FSR.DesktopUI.pdb
+C:\Users\Петро\documents\visual studio 2015\Projects\FSR\FSR.DesktopUI\bin\Debug\FSR.Entities.dll
+C:\Users\Петро\documents\visual studio 2015\Projects\FSR\FSR.DesktopUI\bin\Debug\FSR.Repositories.dll
+C:\Users\Петро\documents\visual studio 2015\Projects\FSR\FSR.DesktopUI\bin\Debug\FSR.Entities.pdb
+C:\Users\Петро\documents\visual studio 2015\Projects\FSR\FSR.DesktopUI\bin\Debug\FSR.Repositories.pdb
+C:\Users\Петро\documents\visual studio 2015\Projects\FSR\FSR.DesktopUI\obj\Debug\FSR.DesktopUI.Forms.LoginForm.resources
+C:\Users\Петро\documents\visual studio 2015\Projects\FSR\FSR.DesktopUI\obj\Debug\FSR.DesktopUI.Forms.MainForm.resources
+C:\Users\Петро\documents\visual studio 2015\Projects\FSR\FSR.DesktopUI\obj\Debug\FSR.DesktopUI.Forms.PriceListForm.resources
+C:\Users\Петро\documents\visual studio 2015\Projects\FSR\FSR.DesktopUI\obj\Debug\FSR.DesktopUI.Forms.FlightInfoForm.resources
+C:\Users\Петро\documents\visual studio 2015\Projects\FSR\FSR.DesktopUI\obj\Debug\FSR.DesktopUI.Forms.ReserveForm.resources
+C:\Users\Петро\documents\visual studio 2015\Projects\FSR\FSR.DesktopUI\obj\Debug\FSR.DesktopUI.Forms.CancelReserveForm.resources
+C:\Users\Петро\documents\visual studio 2015\Projects\FSR\FSR.DesktopUI\obj\Debug\FSR.DesktopUI.Forms.InfoForm.resources
+C:\Users\Петро\Documents\GitHub\FSR\FSR.DesktopUI\bin\Debug\FSR.DesktopUI.exe.config
+C:\Users\Петро\Documents\GitHub\FSR\FSR.DesktopUI\obj\Debug\FSR.DesktopUI.exe
+C:\Users\Петро\Documents\GitHub\FSR\FSR.DesktopUI\obj\Debug\FSR.DesktopUI.pdb

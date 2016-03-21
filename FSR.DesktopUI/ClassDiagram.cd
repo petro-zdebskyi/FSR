@@ -1,2 +1,86 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FSR.DesktopUI.Code.CurrentUser">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAQCAAAAAAAQABAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Code\CurrentUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FSR.DesktopUI.Code.Encryptor">
+    <Position X="11" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Code\Encryptor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FSR.DesktopUI.Forms.CancelReserveForm">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAACAAAAAAAACADAACAAAAQAAEAIAAAAAAAEA=</HashCode>
+      <FileName>Forms\CancelReserveForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FSR.DesktopUI.Forms.FlightInfoForm">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAQAAAAIIAAAAAAAA=</HashCode>
+      <FileName>Forms\FlightInfoForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FSR.DesktopUI.Forms.InfoForm">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAAAAAACAAAACAAAAwAACAIAAAAAAAAA=</HashCode>
+      <FileName>Forms\InfoForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FSR.DesktopUI.Forms.LoginForm">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAEgICAAAEEAAACAAAACAAAACAAAAgAAAABAAAA=</HashCode>
+      <FileName>Forms\LoginForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FSR.DesktopUI.Forms.MainForm">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAQAAACBQCgAAABCQABACAIAAAoAABAAIAAAgAEA=</HashCode>
+      <FileName>Forms\MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FSR.DesktopUI.Forms.PriceListForm">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAACBAAAGAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\PriceListForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FSR.DesktopUI.Forms.ReserveForm">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUAAAQAAESAAAIAAAACAAABCAQAAAAAEBIBAAAAAAAQ=</HashCode>
+      <FileName>Forms\ReserveForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FSR.DesktopUI.Program">
+    <Position X="5.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FSR.DesktopUI.Properties.Resources">
+    <Position X="9.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FSR.DesktopUI.Properties.Settings">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

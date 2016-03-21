@@ -9,22 +9,20 @@ namespace FSR.DesktopUI.Code
 {
     public static class CurrentUser
     {
-        private static User currentUser;
-
         public static void Initialize(User user)
         {
-            if (currentUser != null)
+            if (_currentUser != null)
             {
                 throw new InvalidOperationException("Current user has already been specified");
             }
-            currentUser = user;
+            _currentUser = user;
         }
 
         public static int Id
         {
             get
             {
-                return currentUser.Id;
+                return _currentUser.Id;
             }
         }
 
@@ -32,7 +30,7 @@ namespace FSR.DesktopUI.Code
         {
             get
             {
-                return currentUser.Name;
+                return _currentUser.Name;
             }
         }
 
@@ -40,7 +38,7 @@ namespace FSR.DesktopUI.Code
         {
             get
             {
-                return currentUser.Surname;
+                return _currentUser.Surname;
             }
         }
 
@@ -48,9 +46,9 @@ namespace FSR.DesktopUI.Code
         {
             get
             {
-                return currentUser.Login;
+                return _currentUser.Login;
             }
         }
-
+        private static User _currentUser;
     }
 }

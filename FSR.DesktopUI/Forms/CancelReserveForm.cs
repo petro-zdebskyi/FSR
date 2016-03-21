@@ -15,13 +15,14 @@ namespace FSR.DesktopUI.Forms
 {
     public partial class CancelReserveForm : Form
     {
-        private readonly IPersonRepository _sqlPersonRepository;
         public CancelReserveForm()
         {
             _sqlPersonRepository = new SqlPersonRepository(ConfigurationManager.ConnectionStrings["FSR"].ConnectionString);
 
             InitializeComponent();
         }
+
+        private readonly IPersonRepository _sqlPersonRepository;
 
         private void btnClose_Click(object sender, EventArgs e)
         {

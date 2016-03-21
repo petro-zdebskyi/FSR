@@ -5,3 +5,10 @@ C:\Users\Петро\documents\visual studio 2015\Projects\FSR\FSR.Repositories\b
 C:\Users\Петро\documents\visual studio 2015\Projects\FSR\FSR.Repositories\obj\Debug\FSR.Repositories.csprojResolveAssemblyReference.cache
 C:\Users\Петро\documents\visual studio 2015\Projects\FSR\FSR.Repositories\obj\Debug\FSR.Repositories.dll
 C:\Users\Петро\documents\visual studio 2015\Projects\FSR\FSR.Repositories\obj\Debug\FSR.Repositories.pdb
+C:\Users\Петро\Documents\GitHub\FSR\FSR.Repositories\bin\Debug\FSR.Repositories.dll
+C:\Users\Петро\Documents\GitHub\FSR\FSR.Repositories\bin\Debug\FSR.Repositories.pdb
+C:\Users\Петро\Documents\GitHub\FSR\FSR.Repositories\bin\Debug\FSR.Entities.dll
+C:\Users\Петро\Documents\GitHub\FSR\FSR.Repositories\bin\Debug\FSR.Entities.pdb
+C:\Users\Петро\Documents\GitHub\FSR\FSR.Repositories\obj\Debug\FSR.Repositories.csprojResolveAssemblyReference.cache
+C:\Users\Петро\Documents\GitHub\FSR\FSR.Repositories\obj\Debug\FSR.Repositories.dll
+C:\Users\Петро\Documents\GitHub\FSR\FSR.Repositories\obj\Debug\FSR.Repositories.pdb

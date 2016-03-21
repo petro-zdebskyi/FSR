@@ -9,17 +9,34 @@ CREATE PROCEDURE spReserveSeat
 	@flight INT
 AS
 BEGIN
-	INSERT INTO tblPerson (Name, Surname) VALUES (@name, @surname)
-	UPDATE tblSeatStatus SET UserId = @userid, PersonId = SCOPE_IDENTITY(), SeatStatus = 1 
-	WHERE SeatId =
-	(
-		SELECT Id 
-		FROM tblSeat
-		WHERE Number = @seat AND Flight = @flight
-	)
-	
+	IF NOT EXISTS(SELECT * FROM tblPerson WHERE Name = @name AND Surname = @surname)
+	BEGIN 
+	BEGIN TRAN
+		INSERT INTO tblPerson (Name, Surname) VALUES (@name, @surname)
+		UPDATE tblSeatStatus SET UserId = @userid, PersonId = SCOPE_IDENTITY(), SeatStatus = 1 
+		WHERE SeatId =
+		(
+			SELECT Id 
+			FROM tblSeat
+			WHERE Number = @seat AND Flight = @flight
+		)
+	COMMIT TRAN
+	END
+	ELSE
+	BEGIN
+		DECLARE @personId INT 
+		SELECT @personId =  Id FROM tblPerson WHERE Name = @name AND Surname = @surname
+		UPDATE tblSeatStatus SET UserId = @userid, PersonId = @personId, SeatStatus = 1 
+		WHERE SeatId =
+		(
+			SELECT Id 
+			FROM tblSeat
+			WHERE Number = @seat AND Flight = @flight
+		)
+	END
 END
 GO
+
 
 CREATE PROCEDURE spCancelReserving 
 	@userid INT,

@@ -17,13 +17,7 @@ namespace FSR.Repositories.Classes
         private const string spGetUserByLoginQuery = "spGetUserByLogin";
 
         #endregion
-
-        #region Private Fields
         
-        private readonly SqlConnection _connection;
-
-        #endregion
-
         #region Constructors
 
         public SqlUserRepository(string connectionString)
@@ -62,6 +56,12 @@ namespace FSR.Repositories.Classes
                 }
             }
         }
+
+        #endregion
+
+        #region Private Fields
+
+        private readonly SqlConnection _connection;
 
         #endregion
     }

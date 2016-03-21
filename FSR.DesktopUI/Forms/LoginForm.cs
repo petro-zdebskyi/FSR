@@ -18,13 +18,14 @@ namespace FSR.DesktopUI.Forms
 {
     public partial class LoginForm : Form
     {
-        private readonly IUserRepository _userRepository;
         public LoginForm()
         {
             _userRepository = new SqlUserRepository(ConfigurationManager.ConnectionStrings["FSR"].ConnectionString);
 
             InitializeComponent();
         }
+
+        private readonly IUserRepository _userRepository;
 
         private void btnLogin_Click(object sender, EventArgs e)
         {

@@ -16,13 +16,13 @@ namespace FSR.DesktopUI.Forms
 {
     public partial class ReserveForm : Form
     {
-
-        private readonly IPersonRepository _sqlPersonRepository;
         public ReserveForm()
         {
             _sqlPersonRepository = new SqlPersonRepository(ConfigurationManager.ConnectionStrings["FSR"].ConnectionString);
             InitializeComponent();
         }
+
+        private readonly IPersonRepository _sqlPersonRepository;
 
         private void btnExit_Click(object sender, EventArgs e)
         {

@@ -58,7 +58,7 @@
             this.btnPriceList.Name = "btnPriceList";
             this.btnPriceList.Size = new System.Drawing.Size(99, 23);
             this.btnPriceList.TabIndex = 1;
-            this.btnPriceList.Text = "Список цін";
+            this.btnPriceList.Text = "Price list";
             this.btnPriceList.UseVisualStyleBackColor = true;
             this.btnPriceList.Click += new System.EventHandler(this.btnPriceList_Click);
             // 
@@ -68,7 +68,7 @@
             this.btnFindById.Name = "btnFindById";
             this.btnFindById.Size = new System.Drawing.Size(75, 23);
             this.btnFindById.TabIndex = 2;
-            this.btnFindById.Text = "Знайти";
+            this.btnFindById.Text = "Find";
             this.btnFindById.UseVisualStyleBackColor = true;
             this.btnFindById.Click += new System.EventHandler(this.btnFindById_Click);
             // 
@@ -85,7 +85,7 @@
             this.btnReserve.Name = "btnReserve";
             this.btnReserve.Size = new System.Drawing.Size(99, 23);
             this.btnReserve.TabIndex = 4;
-            this.btnReserve.Text = "Зарезервувати";
+            this.btnReserve.Text = "Reserve";
             this.btnReserve.UseVisualStyleBackColor = true;
             this.btnReserve.Click += new System.EventHandler(this.btnReserve_Click);
             // 
@@ -95,7 +95,7 @@
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(99, 23);
             this.btnRefresh.TabIndex = 5;
-            this.btnRefresh.Text = "Оновити";
+            this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
@@ -105,7 +105,7 @@
             this.btnCancelReserve.Name = "btnCancelReserve";
             this.btnCancelReserve.Size = new System.Drawing.Size(99, 23);
             this.btnCancelReserve.TabIndex = 6;
-            this.btnCancelReserve.Text = "Розрезервувати";
+            this.btnCancelReserve.Text = "Cancellation";
             this.btnCancelReserve.UseVisualStyleBackColor = true;
             this.btnCancelReserve.Click += new System.EventHandler(this.btnCancelReserve_Click);
             // 
@@ -115,7 +115,7 @@
             this.btnInfo.Name = "btnInfo";
             this.btnInfo.Size = new System.Drawing.Size(75, 23);
             this.btnInfo.TabIndex = 7;
-            this.btnInfo.Text = "Довідка";
+            this.btnInfo.Text = "Info";
             this.btnInfo.UseVisualStyleBackColor = true;
             this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
             // 

@@ -18,13 +18,7 @@ namespace FSR.Repositories.Classes
         private const string spGetSeatStatusByIdQuery = "spGetSeatStatusByPersonId";
 
         #endregion
-
-        #region Private Fields
         
-        private readonly SqlConnection _connection;
-
-        #endregion
-
         #region Constructors
 
         public SqlSeatStatusRepository(string connectionString)
@@ -128,6 +122,12 @@ namespace FSR.Repositories.Classes
                 }
             }
         }
+
+        #endregion
+
+        #region Private Fields
+
+        private readonly SqlConnection _connection;
 
         #endregion
     }

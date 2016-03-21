@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReserveForm));
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtSurname = new System.Windows.Forms.TextBox();
-            this.btnApplyReserve = new System.Windows.Forms.Button();
+            this.btnConfirm = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
             this.lblSurname = new System.Windows.Forms.Label();
             this.grbReserve = new System.Windows.Forms.GroupBox();
-            this.lblFlight = new System.Windows.Forms.Label();
-            this.lblSeat = new System.Windows.Forms.Label();
-            this.txtFlightId = new System.Windows.Forms.TextBox();
             this.txtSeat = new System.Windows.Forms.TextBox();
+            this.txtFlightId = new System.Windows.Forms.TextBox();
+            this.lblSeat = new System.Windows.Forms.Label();
+            this.lblFlight = new System.Windows.Forms.Label();
             this.grbReserve.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,15 +57,15 @@
             this.txtSurname.Size = new System.Drawing.Size(100, 20);
             this.txtSurname.TabIndex = 1;
             // 
-            // btnApplyReserve
+            // btnConfirm
             // 
-            this.btnApplyReserve.Location = new System.Drawing.Point(59, 150);
-            this.btnApplyReserve.Name = "btnApplyReserve";
-            this.btnApplyReserve.Size = new System.Drawing.Size(80, 23);
-            this.btnApplyReserve.TabIndex = 2;
-            this.btnApplyReserve.Text = "Підтвердити";
-            this.btnApplyReserve.UseVisualStyleBackColor = true;
-            this.btnApplyReserve.Click += new System.EventHandler(this.btnReserve_Click);
+            this.btnConfirm.Location = new System.Drawing.Point(59, 150);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.Size = new System.Drawing.Size(80, 23);
+            this.btnConfirm.TabIndex = 2;
+            this.btnConfirm.Text = "Confirm";
+            this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnReserve_Click);
             // 
             // btnClose
             // 
@@ -74,7 +74,7 @@
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(80, 23);
             this.btnClose.TabIndex = 3;
-            this.btnClose.Text = "Закрити";
+            this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -83,18 +83,18 @@
             this.lblName.AutoSize = true;
             this.lblName.Location = new System.Drawing.Point(6, 22);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(26, 13);
+            this.lblName.Size = new System.Drawing.Size(35, 13);
             this.lblName.TabIndex = 4;
-            this.lblName.Text = "Ім\'я";
+            this.lblName.Text = "Name";
             // 
             // lblSurname
             // 
             this.lblSurname.AutoSize = true;
             this.lblSurname.Location = new System.Drawing.Point(6, 48);
             this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(56, 13);
+            this.lblSurname.Size = new System.Drawing.Size(49, 13);
             this.lblSurname.TabIndex = 5;
-            this.lblSurname.Text = "Прізвище";
+            this.lblSurname.Text = "Surname";
             // 
             // grbReserve
             // 
@@ -112,23 +112,12 @@
             this.grbReserve.TabIndex = 6;
             this.grbReserve.TabStop = false;
             // 
-            // lblFlight
+            // txtSeat
             // 
-            this.lblFlight.AutoSize = true;
-            this.lblFlight.Location = new System.Drawing.Point(6, 74);
-            this.lblFlight.Name = "lblFlight";
-            this.lblFlight.Size = new System.Drawing.Size(61, 13);
-            this.lblFlight.TabIndex = 6;
-            this.lblFlight.Text = "ID польоту";
-            // 
-            // lblSeat
-            // 
-            this.lblSeat.AutoSize = true;
-            this.lblSeat.Location = new System.Drawing.Point(6, 100);
-            this.lblSeat.Name = "lblSeat";
-            this.lblSeat.Size = new System.Drawing.Size(36, 13);
-            this.lblSeat.TabIndex = 7;
-            this.lblSeat.Text = "Місце";
+            this.txtSeat.Location = new System.Drawing.Point(93, 97);
+            this.txtSeat.Name = "txtSeat";
+            this.txtSeat.Size = new System.Drawing.Size(100, 20);
+            this.txtSeat.TabIndex = 9;
             // 
             // txtFlightId
             // 
@@ -137,12 +126,23 @@
             this.txtFlightId.Size = new System.Drawing.Size(100, 20);
             this.txtFlightId.TabIndex = 8;
             // 
-            // txtSeat
+            // lblSeat
             // 
-            this.txtSeat.Location = new System.Drawing.Point(93, 97);
-            this.txtSeat.Name = "txtSeat";
-            this.txtSeat.Size = new System.Drawing.Size(100, 20);
-            this.txtSeat.TabIndex = 9;
+            this.lblSeat.AutoSize = true;
+            this.lblSeat.Location = new System.Drawing.Point(6, 100);
+            this.lblSeat.Name = "lblSeat";
+            this.lblSeat.Size = new System.Drawing.Size(29, 13);
+            this.lblSeat.TabIndex = 7;
+            this.lblSeat.Text = "Seat";
+            // 
+            // lblFlight
+            // 
+            this.lblFlight.AutoSize = true;
+            this.lblFlight.Location = new System.Drawing.Point(6, 74);
+            this.lblFlight.Name = "lblFlight";
+            this.lblFlight.Size = new System.Drawing.Size(55, 13);
+            this.lblFlight.TabIndex = 6;
+            this.lblFlight.Text = "ID of flight";
             // 
             // ReserveForm
             // 
@@ -152,11 +152,12 @@
             this.ClientSize = new System.Drawing.Size(284, 185);
             this.Controls.Add(this.grbReserve);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnApplyReserve);
+            this.Controls.Add(this.btnConfirm);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimizeBox = false;
             this.Name = "ReserveForm";
-            this.Text = "Резервування";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Reserve";
             this.grbReserve.ResumeLayout(false);
             this.grbReserve.PerformLayout();
             this.ResumeLayout(false);
@@ -164,7 +165,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnApplyReserve;
+        private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblSurname;

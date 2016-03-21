@@ -3,3 +3,8 @@ C:\Users\Петро\documents\visual studio 2015\Projects\FSR\FSR.Entities\bin\D
 C:\Users\Петро\documents\visual studio 2015\Projects\FSR\FSR.Entities\obj\Debug\FSR.Entities.csprojResolveAssemblyReference.cache
 C:\Users\Петро\documents\visual studio 2015\Projects\FSR\FSR.Entities\obj\Debug\FSR.Entities.dll
 C:\Users\Петро\documents\visual studio 2015\Projects\FSR\FSR.Entities\obj\Debug\FSR.Entities.pdb
+C:\Users\Петро\Documents\GitHub\FSR\FSR.Entities\bin\Debug\FSR.Entities.dll
+C:\Users\Петро\Documents\GitHub\FSR\FSR.Entities\bin\Debug\FSR.Entities.pdb
+C:\Users\Петро\Documents\GitHub\FSR\FSR.Entities\obj\Debug\FSR.Entities.csprojResolveAssemblyReference.cache
+C:\Users\Петро\Documents\GitHub\FSR\FSR.Entities\obj\Debug\FSR.Entities.dll
+C:\Users\Петро\Documents\GitHub\FSR\FSR.Entities\obj\Debug\FSR.Entities.pdb

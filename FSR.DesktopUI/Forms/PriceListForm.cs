@@ -15,7 +15,6 @@ namespace FSR.DesktopUI.Forms
 {
     public partial class PriceListForm : Form
     {
-        public readonly ISeatRepository _sqlSeatRepository;
         public PriceListForm()
         {
             _sqlSeatRepository = new SqlSeatRepository(ConfigurationManager.ConnectionStrings["FSR"].ConnectionString);
@@ -25,6 +24,8 @@ namespace FSR.DesktopUI.Forms
             dgvSeats.DataSource = _sqlSeatRepository.GetAllSeats();
 
         }
+
+        public readonly ISeatRepository _sqlSeatRepository;
 
         private void dgvSeats_SelectionChanged(object sender, EventArgs e)
         {

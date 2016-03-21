@@ -16,13 +16,7 @@ namespace FSR.Repositories.Classes
         private const string spGetSeatsQuery = "spGetSeats";
 
         #endregion
-
-        #region Private Fields
         
-        private readonly SqlConnection _connection;
-
-        #endregion
-
         #region Constructors
 
         public SqlSeatRepository(string connectionString)
@@ -64,6 +58,12 @@ namespace FSR.Repositories.Classes
                 }
             }
         }
+
+        #endregion
+
+        #region Private Fields
+
+        private readonly SqlConnection _connection;
 
         #endregion
     }

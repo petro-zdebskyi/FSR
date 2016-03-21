@@ -90,6 +90,7 @@ namespace FSR.Entities
         {
             return _seat;
         }
+        public int Status { get; set; }
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -111,7 +112,6 @@ namespace FSR.Entities
 
             return sb.ToString();
         }
-        public int Status { get; set; }
         private User _user;
         private Person _person;
         private Seat _seat;

@@ -16,15 +16,10 @@ namespace FSR.Repositories.Classes
         #region Queries
 
         private const string spReserveSeatQuery = "spReserveSeat";
-        private const string spCancelReservingQuery = "spCancelReserving"; 
+        private const string spCancelReservingQuery = "spCancelReserving";
+         
         #endregion
-
-        #region Private Fields
-
-        private readonly SqlConnection _connection;
-
-        #endregion
-
+        
         #region Constructors
 
         public SqlPersonRepository(string connectionString)
@@ -67,6 +62,12 @@ namespace FSR.Repositories.Classes
             }
             _connection.Close();
         }
+
+        #endregion
+
+        #region Private Fields
+
+        private readonly SqlConnection _connection;
 
         #endregion
     }

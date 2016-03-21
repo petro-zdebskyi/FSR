@@ -18,23 +18,17 @@ namespace FSR.DesktopUI.Forms
 {
     public partial class MainForm : Form
     {
-        private readonly ISeatStatusRepository _sqlSeatStatusRepository;
         public MainForm()
         {
             _sqlSeatStatusRepository = new SqlSeatStatusRepository(ConfigurationManager.ConnectionStrings["FSR"].ConnectionString);
 
             InitializeComponent();
 
-            
-
             dgvSeatStatuses.DataSource = _sqlSeatStatusRepository.GetAllSeatStatuses();
-
-            //dtgSeatStatus.AutoGenerateColumns = true;
-            // Automatically resize the visible rows.
-            //dtgSeatStatus.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
-            // Set the DataGridView control's border.
-            //dtgSeatStatus.BorderStyle = BorderStyle.Fixed3D;
         }
+
+        private readonly ISeatStatusRepository _sqlSeatStatusRepository;
+
         private void dtgSeatStatus_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
             foreach (DataGridViewRow row in dgvSeatStatuses.Rows)

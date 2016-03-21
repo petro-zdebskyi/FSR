@@ -78,9 +78,9 @@
             this.lblFirstColumn.AutoSize = true;
             this.lblFirstColumn.Location = new System.Drawing.Point(12, 123);
             this.lblFirstColumn.Name = "lblFirstColumn";
-            this.lblFirstColumn.Size = new System.Drawing.Size(194, 13);
+            this.lblFirstColumn.Size = new System.Drawing.Size(203, 13);
             this.lblFirstColumn.TabIndex = 4;
-            this.lblFirstColumn.Text = "ID of reserving - first column in main grid";
+            this.lblFirstColumn.Text = "ID of reservation - first column in main grid";
             // 
             // InfoForm
             // 

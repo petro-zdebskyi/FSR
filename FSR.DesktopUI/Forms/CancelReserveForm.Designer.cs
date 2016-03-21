@@ -38,7 +38,7 @@
             // lblReservationId
             // 
             this.lblReservationId.AutoSize = true;
-            this.lblReservationId.Location = new System.Drawing.Point(66, 40);
+            this.lblReservationId.Location = new System.Drawing.Point(68, 30);
             this.lblReservationId.Name = "lblReservationId";
             this.lblReservationId.Size = new System.Drawing.Size(85, 13);
             this.lblReservationId.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             // txtReservationId
             // 
-            this.txtReservationId.Location = new System.Drawing.Point(157, 37);
+            this.txtReservationId.Location = new System.Drawing.Point(159, 27);
             this.txtReservationId.Name = "txtReservationId";
             this.txtReservationId.Size = new System.Drawing.Size(122, 20);
             this.txtReservationId.TabIndex = 1;

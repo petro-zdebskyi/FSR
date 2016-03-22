@@ -12,14 +12,22 @@ namespace FSR.DesktopUI.Forms
 {
     public partial class InfoForm : Form
     {
+        #region Constructors
+
         public InfoForm()
         {
             InitializeComponent();
         }
 
+        #endregion
+
+        #region Methods
+
         private void btnClose_Click(object sender, EventArgs e)
         {
             Close();
         }
+
+        #endregion
     }
 }

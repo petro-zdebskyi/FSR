@@ -16,13 +16,17 @@ namespace FSR.DesktopUI.Forms
 {
     public partial class ReserveForm : Form
     {
+        #region Constructors
+
         public ReserveForm()
         {
             _sqlPersonRepository = new SqlPersonRepository(ConfigurationManager.ConnectionStrings["FSR"].ConnectionString);
             InitializeComponent();
         }
 
-        private readonly IPersonRepository _sqlPersonRepository;
+        #endregion
+
+        #region Methods
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -43,5 +47,13 @@ namespace FSR.DesktopUI.Forms
                 _sqlPersonRepository.MakeReserveation(userId, name, surname, flightId, seat);
             }
         }
+
+        #endregion
+
+        #region Private Fields
+
+        private readonly IPersonRepository _sqlPersonRepository;
+
+        #endregion
     }
 }

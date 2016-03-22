@@ -15,6 +15,8 @@ namespace FSR.DesktopUI.Forms
 {
     public partial class CancelReserveForm : Form
     {
+        #region Constructors
+
         public CancelReserveForm()
         {
             _sqlPersonRepository = new SqlPersonRepository(ConfigurationManager.ConnectionStrings["FSR"].ConnectionString);
@@ -22,7 +24,9 @@ namespace FSR.DesktopUI.Forms
             InitializeComponent();
         }
 
-        private readonly IPersonRepository _sqlPersonRepository;
+        #endregion
+
+        #region Methods
 
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -39,5 +43,13 @@ namespace FSR.DesktopUI.Forms
                 _sqlPersonRepository.CancelReservation(userId, seatStatusId);
             }
         }
+
+        #endregion
+
+        #region Private Fields
+
+        private readonly IPersonRepository _sqlPersonRepository;
+
+        #endregion
     }
 }

@@ -30,7 +30,6 @@ namespace FSR.Repositories.Classes
 
         public List<Seat> GetAllSeats()
         {
-
             List<Seat> seatsList = new List<Seat>();
             _connection.Open();
             using (SqlCommand command = new SqlCommand(spGetSeatsQuery, _connection))

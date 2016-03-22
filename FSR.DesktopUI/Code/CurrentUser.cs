@@ -9,6 +9,7 @@ namespace FSR.DesktopUI.Code
 {
     public static class CurrentUser
     {
+        #region Methods
         public static void Initialize(User user)
         {
             if (_currentUser != null)
@@ -17,6 +18,10 @@ namespace FSR.DesktopUI.Code
             }
             _currentUser = user;
         }
+
+        #endregion
+
+        #region Properties
 
         public static int Id
         {
@@ -49,6 +54,13 @@ namespace FSR.DesktopUI.Code
                 return _currentUser.Login;
             }
         }
+
+        #endregion
+
+        #region Private Fields
+
         private static User _currentUser;
+
+        #endregion
     }
 }

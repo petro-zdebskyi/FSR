@@ -18,6 +18,8 @@ namespace FSR.DesktopUI.Forms
 {
     public partial class MainForm : Form
     {
+        #region Constructors
+
         public MainForm()
         {
             _sqlSeatStatusRepository = new SqlSeatStatusRepository(ConfigurationManager.ConnectionStrings["FSR"].ConnectionString);
@@ -27,10 +29,13 @@ namespace FSR.DesktopUI.Forms
             dgvSeatStatuses.DataSource = _sqlSeatStatusRepository.GetAllSeatStatuses();
         }
 
-        private readonly ISeatStatusRepository _sqlSeatStatusRepository;
+        #endregion
 
+
+        #region Methods
         private void dtgSeatStatus_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
+            // Set rows color
             foreach (DataGridViewRow row in dgvSeatStatuses.Rows)
             {
                 if (row.Cells[10].Value.ToString() == "0") 
@@ -63,12 +68,15 @@ namespace FSR.DesktopUI.Forms
         {
             int personId;
             bool checkParse = int.TryParse(txtFindById.Text, out personId);
+
             if(!checkParse)
             {
                 MessageBox.Show(this, "Invalid format of person Id", "Converting Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
             List<SeatStatus> seatStatusesList = _sqlSeatStatusRepository.GetSeatStatusByPersonId(personId);
+
             if (seatStatusesList == null)
             {
                 MessageBox.Show(this, "Invalid person Id", "Person Id Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -78,7 +86,8 @@ namespace FSR.DesktopUI.Forms
                 FlightInfoForm frmFlightInfo = new FlightInfoForm();
                 foreach (var el in seatStatusesList)
                 {
-                    frmFlightInfo.txtFlightInfo.Text += $"{ el.ToString()}{Environment.NewLine}{Environment.NewLine}";
+                    frmFlightInfo.txtFlightInfo.Text += el.ToString();
+                    frmFlightInfo.txtFlightInfo.Text += "\n";
                 }
                 frmFlightInfo.Show();
             }
@@ -107,5 +116,13 @@ namespace FSR.DesktopUI.Forms
             InfoForm frmInfo = new InfoForm();
             frmInfo.Show();
         }
+
+        #endregion
+
+        #region Private Fields
+
+        private readonly ISeatStatusRepository _sqlSeatStatusRepository;
+
+        #endregion
     }
 }

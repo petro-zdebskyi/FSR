@@ -8,13 +8,20 @@ namespace FSR.Entities
 {
     public class SeatStatus
     {
+        #region Constructors
+
         public SeatStatus(User user, Person person, Seat seat)
         {
             _user = user;
             _person = person;
             _seat = seat;
         }
-        public  int Id { get; set; }
+
+        #endregion
+
+        #region Properties
+
+        public int Id { get; set; }
         public string UserName
         {
             get
@@ -78,6 +85,11 @@ namespace FSR.Entities
                 return _seat.GetFlightInfo().Destination;
             }
         }
+
+        #endregion
+
+        #region Methods
+
         public User GetUserInfo()
         {
             return _user;
@@ -112,8 +124,15 @@ namespace FSR.Entities
 
             return sb.ToString();
         }
+
+        #endregion
+
+        #region Private Fields
+
         private User _user;
         private Person _person;
         private Seat _seat;
+
+        #endregion
     }
 }

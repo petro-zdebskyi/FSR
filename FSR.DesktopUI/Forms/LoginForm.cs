@@ -18,6 +18,8 @@ namespace FSR.DesktopUI.Forms
 {
     public partial class LoginForm : Form
     {
+        #region Constructors
+
         public LoginForm()
         {
             _userRepository = new SqlUserRepository(ConfigurationManager.ConnectionStrings["FSR"].ConnectionString);
@@ -25,12 +27,15 @@ namespace FSR.DesktopUI.Forms
             InitializeComponent();
         }
 
-        private readonly IUserRepository _userRepository;
+        #endregion
+
+        #region Methods
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string login = txtLogin.Text;
             string password = Encryptor.MD5Hash(txtPassword.Text);
+
             User user = _userRepository.GetUserByLogin(login, password);
             if (user == null)
             {
@@ -43,5 +48,13 @@ namespace FSR.DesktopUI.Forms
                 this.Close();
             }
         }
+
+        #endregion
+
+        #region Private Fields
+
+        private readonly IUserRepository _userRepository;
+
+        #endregion
     }
 }

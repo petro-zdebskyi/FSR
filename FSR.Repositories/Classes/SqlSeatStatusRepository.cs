@@ -74,8 +74,9 @@ namespace FSR.Repositories.Classes
             return seatStatusesList;
         }
 
-        public SeatStatus GetSeatStatusByPersonId(int personId)
+        public List<SeatStatus> GetSeatStatusByPersonId(int personId)
         {
+            List<SeatStatus> seatStatusesList = new List<SeatStatus>();
             _connection.Open();
             using (SqlCommand command = new SqlCommand())
             {
@@ -85,7 +86,7 @@ namespace FSR.Repositories.Classes
                 command.Parameters.AddWithValue("@personId", personId);
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
-                    if (reader.Read())
+                    while (reader.Read())
                     {
                         var user = new User();
                         var person = new Person();
@@ -114,11 +115,10 @@ namespace FSR.Repositories.Classes
                         seatStatus.Id = (int)reader[18];
                         seatStatus.Status = (int)reader[19];
 
-                        _connection.Close();
-                        return seatStatus;
+                        seatStatusesList.Add(seatStatus);
                     }
                     _connection.Close();
-                    return null;
+                    return seatStatusesList;
                 }
             }
         }

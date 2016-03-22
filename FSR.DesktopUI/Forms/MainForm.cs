@@ -68,15 +68,18 @@ namespace FSR.DesktopUI.Forms
                 MessageBox.Show(this, "Invalid format of person Id", "Converting Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            SeatStatus seatStatus = _sqlSeatStatusRepository.GetSeatStatusByPersonId(personId);
-            if (seatStatus == null)
+            List<SeatStatus> seatStatusesList = _sqlSeatStatusRepository.GetSeatStatusByPersonId(personId);
+            if (seatStatusesList == null)
             {
                 MessageBox.Show(this, "Invalid person Id", "Person Id Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
                 FlightInfoForm frmFlightInfo = new FlightInfoForm();
-                frmFlightInfo.txtFlightInfo.Text = _sqlSeatStatusRepository.GetSeatStatusByPersonId(personId).ToString();
+                foreach (var el in seatStatusesList)
+                {
+                    frmFlightInfo.txtFlightInfo.Text += $"{ el.ToString()}{Environment.NewLine}{Environment.NewLine}";
+                }
                 frmFlightInfo.Show();
             }
         }

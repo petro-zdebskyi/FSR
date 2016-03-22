@@ -10,6 +10,6 @@ namespace FSR.Repositories.Interfaces
     public interface ISeatStatusRepository
     {
         List<SeatStatus> GetAllSeatStatuses();
-        SeatStatus GetSeatStatusByPersonId(int personId);
+        List<SeatStatus> GetSeatStatusByPersonId(int personId);
     }
 }

@@ -40,7 +40,7 @@
             this.txtFlightInfo.Location = new System.Drawing.Point(12, 12);
             this.txtFlightInfo.Multiline = true;
             this.txtFlightInfo.Name = "txtFlightInfo";
-            this.txtFlightInfo.ReadOnly = true;
+            this.txtFlightInfo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtFlightInfo.Size = new System.Drawing.Size(299, 213);
             this.txtFlightInfo.TabIndex = 0;
             // 

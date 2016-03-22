@@ -5,9 +5,9 @@ INSERT INTO tblFlight (DepatureTime, ArrivalTime, Depature, Destination) VALUES 
 INSERT INTO tblFlight (DepatureTime, ArrivalTime, Depature, Destination) VALUES ('2016-8-11', '2016-8-12', 'New York', 'Madrid')
 
 --insert users
-INSERT INTO tblUser (Name, Surname, [Login], [Password], [Disabled]) VALUES ('Andriy', 'Shevchenko', 'andriys', '098765', 0)
-INSERT INTO tblUser (Name, Surname, [Login], [Password], [Disabled]) VALUES ('Ivan', 'Borovyi', 'ivanb', '054321', 0)
-INSERT INTO tblUser (Name, Surname, [Login], [Password], [Disabled]) VALUES ('Oleg', 'Shevchuk', 'olegs', '012345', 1)
+INSERT INTO tblUser (Name, Surname, [Login], [Password], [Disabled]) VALUES ('Andriy', 'Shevchenko', 'andriys', 'a8698009bce6d1b8c2128eddefc25aad', 0) --098765
+INSERT INTO tblUser (Name, Surname, [Login], [Password], [Disabled]) VALUES ('Ivan', 'Borovyi', 'ivanb', '7ff5b944e481d8e3af2c094dd6463273', 0) --054321
+INSERT INTO tblUser (Name, Surname, [Login], [Password], [Disabled]) VALUES ('Oleg', 'Shevchuk', 'olegs', 'd6a9a933c8aafc51e55ac0662b6e4d4a', 1) --012345
 
 --insert seats info
 DECLARE @seat_value INT

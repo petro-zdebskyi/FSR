@@ -37,7 +37,6 @@ BEGIN
 END
 GO
 
-
 CREATE PROCEDURE spCancelReserving 
 	@userid INT,
 	@seatStatusId INT

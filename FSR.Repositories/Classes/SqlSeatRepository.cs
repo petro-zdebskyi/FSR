@@ -62,6 +62,7 @@ namespace FSR.Repositories.Classes
 
         #region Private Fields
 
+        // IP: роботу з ініціалізацією ПОВСЮДНОВЖИВАНОГО поля "_connection" можна було б сміливо винести в окремий базовий клас (це стосується усіх репозиторіїв)
         private readonly SqlConnection _connection;
 
         #endregion

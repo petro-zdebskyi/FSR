@@ -106,21 +106,21 @@ namespace FSR.Entities
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"ID реєстрації: {Id}");
-            sb.AppendLine($"ID реєстратора : {_user.Id}");
-            sb.AppendLine($"Ім'я реєстратора: {_user.Name}");
-            sb.AppendLine($"Прізвище реєстратора: {_user.Surname}");
-            sb.AppendLine($"ID замовника: {_person.Id}");
-            sb.AppendLine($"Ім'я замовника: {_person.Name}");
-            sb.AppendLine($"Прізвище замовника: {_person.Surname}");
-            sb.AppendLine($"ID місця: {_seat.Id}");
-            sb.AppendLine($"Номер місця: {_seat.Number}");
-            sb.AppendLine($"ID польоту: {_seat.GetFlightInfo().Id}");
-            sb.AppendLine($"Час вильоту: {_seat.GetFlightInfo().DepatureTime}");
-            sb.AppendLine($"Час прибуття: {_seat.GetFlightInfo().ArrivalTime}");
-            sb.AppendLine($"Місце вильоту: {_seat.GetFlightInfo().Depature}");
-            sb.AppendLine($"Місце прибуття: {_seat.GetFlightInfo().Destination}");
-            sb.Append($"Статус місця: {Status}");
+            sb.AppendLine(@"ID реєстрації: {Id}");
+            sb.AppendLine(@"ID реєстратора : {_user.Id}");
+            sb.AppendLine(@"Ім'я реєстратора: {_user.Name}");
+            sb.AppendLine(@"Прізвище реєстратора: {_user.Surname}");
+            sb.AppendLine(@"ID замовника: {_person.Id}");
+            sb.AppendLine(@"Ім'я замовника: {_person.Name}");
+            sb.AppendLine(@"Прізвище замовника: {_person.Surname}");
+            sb.AppendLine(@"ID місця: {_seat.Id}");
+            sb.AppendLine(@"Номер місця: {_seat.Number}");
+            sb.AppendLine(@"ID польоту: {_seat.GetFlightInfo().Id}");
+            sb.AppendLine(@"Час вильоту: {_seat.GetFlightInfo().DepatureTime}");
+            sb.AppendLine(@"Час прибуття: {_seat.GetFlightInfo().ArrivalTime}");
+            sb.AppendLine(@"Місце вильоту: {_seat.GetFlightInfo().Depature}");
+            sb.AppendLine(@"Місце прибуття: {_seat.GetFlightInfo().Destination}");
+            sb.Append(@"Статус місця: {Status}");
 
             return sb.ToString();
         }
@@ -129,6 +129,8 @@ namespace FSR.Entities
 
         #region Private Fields
 
+        // IP: можливо, доцільніше було б не включати повноцінні inner entities, - натомість добавити 
+        // в репо відповідні методи по ініціалізації пов'язаних сутностей: наприклад, GetSeatStatusUser (userId)
         private User _user;
         private Person _person;
         private Seat _seat;
